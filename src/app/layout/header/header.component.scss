@@ -1,0 +1,103 @@
+.navbar 
+{
+    background: #fff;
+    padding: 0;
+
+    .container-large 
+    {
+        padding: 0 32px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-brand 
+    {
+        padding: 0;
+        margin-right: 0;
+        color: #303030;
+        font-weight: 600;
+
+        .logo {max-width: 100%; height: auto; object-fit: contain;}
+    }
+
+    .navbar-collapse 
+    {
+        display: flex;
+
+        .navbar-nav 
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 42px;
+
+            .nav-item 
+            {
+                .nav-link 
+                {
+                    color: #303030;
+                    font-size: 17px;
+                    font-weight: 600;
+                    line-height: 71px;
+                    padding: 0;
+
+                    &:hover,
+                    &.active 
+                    {
+                        color: #306FD5;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+
+        .btn-wrapper 
+        {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            li 
+            {
+                list-style: none;
+
+                button 
+                {
+                    padding: 13px 46px 13px 47px;
+                    text-align: center;
+                    font-size: 17px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    border-radius: 48px;
+                    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.10);
+                    background: #fff;
+
+                    &.btn-login 
+                    {
+                        border: 1px solid #303030;
+                        color: #303030;
+
+                        &:hover 
+                        {
+                            background: #306FD5;
+                            color: #fff;
+                            border: 1px solid transparent;
+                            transition: all 0.5s ease;
+                        }
+                    }
+
+                    &.btn-register 
+                    {
+                        border: none;
+                        background: #306FD5;
+                        color: #fff;
+                        padding: 12px 23.5px 12px 24.5px;
+                    }
+                }
+            }
+        }
+    }
+}

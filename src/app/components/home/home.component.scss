@@ -1,0 +1,116 @@
+.estimate-wrapper 
+{
+    padding: 6px 33px 10px 31px;
+    
+    .estimate-container 
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        
+        .left-content-wrapper 
+        {
+            h4 
+            {
+                color: #303030;
+                font-size: 46px;
+                font-weight: 700;
+                line-height: 60.5px;
+                font-family: 'avenirnext_forintuitbold';
+                margin-bottom: 21px;
+                width: 50%;
+            }
+
+            p 
+            {
+                color: #303030;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 24px;
+                line-height: 25px;
+                width: 70%;
+            }
+
+            .btn-estimate-wrap 
+            {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+
+                button 
+                {
+                    padding: 13px 46px 13px 47px;
+                    text-align: center;
+                    font-size: 17px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    border-radius: 48px;
+                    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.10);
+                    background: #fff;
+
+                    &.btn-register 
+                    {
+                        border: none;
+                        background: #306FD5;
+                        color: #fff;
+                    }
+                }
+
+                a 
+                {
+                    text-decoration: none;
+                    color: #303030;
+                    font-size: 17px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+        }
+
+        .video-wrapper 
+        {
+            width: 660.838px;
+            height: 370.4px;
+            border-radius: 14.706px;
+            background: #306FD5;
+            overflow: hidden;
+            margin-left: auto;
+            position: relative;
+
+            .img-play 
+            {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .service-wrapper 
+    {
+        display: flex;
+        padding: 20px 0 15.746px 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* RESPONSIVE STYLES OF MAIN TITLE */
+@media (min-width: 1367px) 
+{
+    .estimate-wrapper 
+    {
+        .estimate-container 
+        {
+            .left-content-wrapper 
+            {
+                h4 {width: 100%;}
+            }
+        }
+    }
+}

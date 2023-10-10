@@ -1,0 +1,9 @@
+<div class="service-content">
+  <h5>Estimates that save you time and communication with the carrier</h5>
+  <div class="service-card-wrapper">
+    <div class="service-item" *ngFor="let feature of features">
+      <img [src]="feature.src" class="img-fluid" alt="" />
+      <p>{{ feature.text }}</p>
+    </div>
+  </div>
+</div>
